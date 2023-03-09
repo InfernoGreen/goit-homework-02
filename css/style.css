@@ -5,7 +5,7 @@
   /* LIGHT SLATE*/
   --address-color: #8E8F99;
   /* CLOUD button, hero-text */
-  --wight-color: #F4F4FD;
+  --wight-color: #ffffff;
   /*SLATE*/
   --body-color: #434455;
   /*HOVER LINKS OCEAN*/
@@ -13,6 +13,7 @@
     /*iris* logo, btn*/
     --btn-color: #4D5AE5;
     --hero-bgc: #2E2F42;
+    
 }
 body {
   font-family:'Roboto', sans-serif;
@@ -36,13 +37,15 @@ body {
 }
 
 nav .link {
+  letter-spacing: 0.02em;
   text-decoration: none;
   font-weight: 500;
   line-height: 1.5;
   color: var(--heading-color);
 
 }
-nav .link:hover {
+nav .link:hover,
+nav .link:focus {
   color: var(--hover-color);
 }
 nav li {
@@ -57,7 +60,8 @@ nav li {
   font-style: normal;
   text-decoration: none;
 }
-.address_link:hover {
+.address_link:hover,
+.address_link:focus {
   color: #404BBF;
 }
 address ul{
@@ -96,13 +100,11 @@ color: var(--wight-color);
   list-style: none;
 }
 .motivation.text{
-font-size: 14px;
 line-height: 1.5;
 color: var(--body-color);
 letter-spacing: 0.02em;
 }
-.wawdoing.title{
-font-weight: 700;
+.section-title{
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
@@ -116,22 +118,14 @@ color:var(--heading-color) ;
 .team ul{
   list-style: none;
 }
-.team.title{
-font-size: 36px;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: var(--heading-color);
-}
-.team.name{
+.team-name{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color:var(--heading-color);
 }
-.team.job{
-font-weight: 400;
+.team-job{
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--body-color);
@@ -155,10 +149,10 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 }
-.filters li{
+.project li{
   list-style: none;
 }
-.filters button{
+.project button{
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
@@ -171,18 +165,20 @@ text-align: center;
 letter-spacing: 0.04em;
 color: var(--btn-color);
 }
-.filters button:hover{
+.project button:hover,
+.project button:focus{
   background: var(--hover-color);
   color: var(--wight-color);
 }
-.filters.title{
+.project-title{
+font-weight: 500;
 font-size: 20px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--heading-color);
 }
-.filters.text{
-  line-height: 24px;
+.project-text{
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-color);
 }
