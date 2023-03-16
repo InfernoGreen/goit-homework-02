@@ -30,6 +30,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+button{
+  border-radius: 4px;
+  background: var(--btn-color);
+  cursor: pointer;
+}
 .section {
   margin: 120px 0;
 }
@@ -64,6 +69,7 @@ ul {
   color: #4d5ae5;
   text-decoration: none;
   padding: 24px 0;
+  margin-right: 76px;
 }
 
 .logo span {
@@ -76,16 +82,15 @@ ul {
   line-height: 1.5;
   color: var(--heading-color);
   display: inline-flex;
-  margin-left: 78px;
+}
+.link-menu:hover,
+.link-menu:focus{
+  color: var(--hover-color);
 }
 .header-menu li:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-menu.link:hover,
-.header-menu.link:focus {
-  color: var(--hover-color);
-}
 .navig_menu .link-menu:active {
   background: var(--hover-color);
   color: var(--wight-color);
@@ -101,7 +106,7 @@ ul {
 .header-adr {
   margin-left: auto;
 }
-li > .mail {
+.position-adres {
   padding-right: 40px;
 }
 .address_link {
@@ -140,17 +145,13 @@ div.container-hero {
   text-align-last: center;
 }
 .herobtn {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--btn-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--wight-color);
+  font-size: 16px;
   margin-top: 48px;
   padding: 16px 32px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
 }
 .herobtn:hover {
   background: var(--hover-color);
@@ -159,6 +160,9 @@ div.container-hero {
 .tit-hidd {
   display: inline;
   visibility: hidden;
+}
+.container-hero{
+  padding: 0;
 }
 .container-m {
   box-sizing: border-box;
